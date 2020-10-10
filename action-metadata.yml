@@ -1,12 +1,12 @@
 name: 'Cloudflare DNS Deploy'
 description: 'Create or update cloudflare dns record'
 inputs:
-  token:  # id of input
+  token:
     description: 'Cloudflare API Token'
     required: true
 outputs:
-  time: # id of output
+  time:
     description: 'The time we greeted you'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'

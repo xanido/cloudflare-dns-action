@@ -5,9 +5,13 @@
   "author": "Tim Anido <tim@tim.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "ncc build index.js -m"
+  },
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
+    "@vercel/ncc": "^0.24.1",
     "cloudflare": "^2.7.0"
   }
 }
