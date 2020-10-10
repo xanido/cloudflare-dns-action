@@ -4,9 +4,11 @@ inputs:
   token:
     description: 'Cloudflare API Token'
     required: true
-outputs:
-  time:
-    description: 'The time we greeted you'
+  content:
+    description: 'The cname value'
+    required: true
+  name:
+    description: 'The name of the dns record'
 runs:
   using: 'node12'
   main: 'dist/index.js'
